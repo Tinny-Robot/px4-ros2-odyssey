@@ -172,25 +172,16 @@ sudo apt-get install gz-harmonic
 # Test Gazebo installation
 gz sim
 ```
-```
 
 ### 4. QGroundControl Setup
 
 📚 **Official Documentation:**
-- [QGroundControl User Guide](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html)
-- [QGroundControl Download Page](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html)
+Follow official Documentation
+- [QGroundControl INstallation Guide](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html)
 
-#### Step 4.1: Set Up Serial Port Access
-```bash
-# Add user to dialout group for USB device access
-sudo usermod -aG dialout "$(id -un)"
+or 
 
-# Disable ModemManager (Optional but recommended)
-sudo systemctl mask --now ModemManager.service
-```
-💡 **Note:** Log out and back in for the group changes to take effect.
-
-#### Step 4.2: Install Required Dependencies
+#### Step 4.1: Install Required Dependencies 
 ```bash
 # Install GStreamer and other required packages
 sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
@@ -198,7 +189,7 @@ sudo apt install libfuse2 -y
 sudo apt install libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor-dev -y
 ```
 
-#### Step 4.3: Install QGroundControl
+#### Step 4.2: Install QGroundControl
 ```bash
 # Download QGroundControl
 wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage
@@ -214,8 +205,7 @@ chmod +x ./QGroundControl.AppImage
 - Store the AppImage in a permanent location
 - Create a desktop shortcut for easy access
 - Consider adding to system PATH
-```
-
+___
 ## Workspace Setup
 
 ### 5. ROS 2 Workspace Configuration
@@ -239,7 +229,6 @@ Key steps:
 2. Install dependencies
 3. Build the workspace
 4. Configure message bridges
-```
 
 ## Testing and Verification
 
@@ -277,7 +266,7 @@ Common issues and their solutions:
 
 3. **Gazebo launching issues**
    - Check graphics drivers
-   - Verify installation with `gz --version`
+   - Verify installation with `gz --versions`
 
 ## Next Steps
 Once your environment is set up, proceed to [Module 2: ROS 2 Basics](module-2-ros2-basics.md) to start learning about ROS 2 concepts and how they integrate with PX4.
@@ -289,7 +278,7 @@ Once your environment is set up, proceed to [Module 2: ROS 2 Basics](module-2-ro
 - [PX4 Development Guide](https://docs.px4.io/main/en/development/development.html)
 - [Gazebo Harmonic Documentation](https://gazebosim.org/docs/harmonic)
 - [QGroundControl User Guide](https://docs.qgroundcontrol.com/master/en/)
-- [Holybro X500v2 Documentation](https://docs.holybro.com/x500v2)
+- [PX4 Development Kit - X500v2](https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2)
 
 ### Community Resources
 - [ROS 2 Discourse](https://discourse.ros.org/)
