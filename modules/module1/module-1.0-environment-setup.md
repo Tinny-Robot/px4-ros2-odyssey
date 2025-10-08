@@ -98,7 +98,7 @@ ros2 run demo_nodes_cpp listener  # In terminal 2
 📚 **Official Documentation:**
 - [PX4 Development Environment on Ubuntu](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
 - [PX4 Build Instructions](https://docs.px4.io/main/en/dev_setup/building_px4.html)
-- [X500v2 Airframe Reference](https://docs.px4.io/main/en/frames_multicopter/holybro_x500v2_pixhawk5x.html)
+- [X500v2 Airframe Reference](https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2)
 
 #### Step 2.1: Get PX4 Source Code
 ```bash
@@ -208,27 +208,11 @@ chmod +x ./QGroundControl.AppImage
 ___
 ## Workspace Setup
 
-### 5. ROS 2 Workspace Configuration
+This section has moved to a dedicated module:
 
-Follow the official workspace setup guide:
-[Creating a ROS 2 Workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
+Next: Module 1.1 — Workspace Setup → modules/module1/module-1.1-workspace-setup.md
 
-Key steps:
-1. Create workspace directory structure
-2. Initialize source space
-3. Install dependencies
-4. Build the workspace
-
-### 6. PX4-ROS 2 Bridge Setup
-
-Follow the official microRTPS bridge setup:
-[PX4-ROS 2 Bridge Setup](https://docs.px4.io/main/en/ros/ros2_comm.html)
-
-Key steps:
-1. Clone required repositories
-2. Install dependencies
-3. Build the workspace
-4. Configure message bridges
+We separated it to keep Environment Setup focused on system dependencies and installations.
 
 ## Testing and Verification
 

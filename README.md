@@ -60,8 +60,6 @@ This module covers:
 - Setting up the Holybro X500v2 simulation model
 - Creating a complete development environment
 
-> 💡 We're actively developing this module together. Follow along in [Module 1](modules/module-1-environment-setup.md).
-
 ---
 
 ## 🧠 Learning Outcomes  
