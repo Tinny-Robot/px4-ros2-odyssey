@@ -87,6 +87,20 @@ rm -rf build/ install/ log/
 colcon build --symlink-install --event-handlers console_direct+
 ```
 
+##### Build Output Example
+
+When the build completes successfully, you should see output similar to the following:
+
+```plaintext
+Finished <<< px4_ros_com [11min 45s]
+
+Summary: 2 packages finished [14min 26s]
+
+Tinny-Robot@Innov8:~/px4_ros2_ws$
+```
+
+If the build fails, review the error messages and ensure all dependencies are installed correctly. Refer to the [Common Issues](#7-common-issues) section for troubleshooting tips.
+
 If you encounter DDS-related errors, try:
 ```bash
 # Ensure Fast-DDS RMW is available
