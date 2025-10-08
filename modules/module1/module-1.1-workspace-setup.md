@@ -125,14 +125,39 @@ ros2 pkg list | grep -E "px4_msgs|px4_ros_com" || true
 
 ## 6. Quick Smoke Tests
 
-### 6.1. Run PX4 SITL (Gazebo Harmonic X500)
+### 6.1. Start the Micro XRCE-DDS Agent (ROS Bridge)
+PX4 uses uXRCE-DDS to communicate; run an agent to bridge PX4 to the ROS 2 DDS network.
+
+Install one agent (choose ONE):
+```bash
+# Option A: eProsima Micro XRCE-DDS Agent (non-ROS)
+sudo apt install micro-xrce-dds-agent
+
+# Option B: micro-ROS Agent (ROS 2 package)
+sudo apt install ros-humble-micro-ros-agent
+```
+
+Run the agent in its own terminal:
+```bash
+# eProsima agent (default PX4 UDP port 8888)
+MicroXRCEAgent udp -p 8888
+
+# OR micro-ROS agent (equivalent)
+ros2 run micro_ros_agent micro_ros_agent udp -p 8888
+```
+
+Notes:
+- Keep the agent running while using PX4.
+- Ensure all terminals share the same ROS_DOMAIN_ID (default 0).
+
+### 6.2. Run PX4 SITL (Gazebo Harmonic X500)
 In a new terminal:
 ```bash
 cd ~/PX4-Autopilot
 make px4_sitl gz_x500
 ```
 
-### 6.2. Echo a PX4 Topic
+### 6.3. Echo a PX4 Topic
 With SITL running, in another terminal:
 ```bash
 source /opt/ros/humble/setup.bash
@@ -145,7 +170,7 @@ ros2 topic list | grep px4 || true
 ros2 topic echo /fmu/out/vehicle_odometry --qos-reliability best_effort --qos-durability volatile
 ```
 
-### 6.3. Minimal Publisher Test (Optional)
+### 6.4. Minimal Publisher Test (Optional)
 Create a simple demo package (optional):
 ```bash
 cd ~/px4_ros2_ws/src

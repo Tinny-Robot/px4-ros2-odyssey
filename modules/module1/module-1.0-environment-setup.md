@@ -205,6 +205,20 @@ chmod +x ./QGroundControl.AppImage
 - Store the AppImage in a permanent location
 - Create a desktop shortcut for easy access
 - Consider adding to system PATH
+ 
+### 5. Micro XRCE-DDS Agent (ROS Bridge)
+
+PX4 uses the Micro XRCE-DDS protocol to communicate. Install the agent that bridges PX4 to the ROS 2 DDS network.
+
+📚 Reference: https://docs.px4.io/main/en/ros/ros2_comm.html
+
+```bash
+sudo apt update
+sudo snap install micro-xrce-dds-agent
+```
+
+You will run the agent when testing (see Workspace Setup module for usage).
+
 ___
 ## Workspace Setup
 
