@@ -131,7 +131,7 @@ PX4 uses uXRCE-DDS to communicate; run an agent to bridge PX4 to the ROS 2 DDS n
 Install one agent (choose ONE):
 ```bash
 # Option A: eProsima Micro XRCE-DDS Agent (non-ROS)
-sudo apt install micro-xrce-dds-agent
+sudo snap install micro-xrce-dds-agent
 
 # Option B: micro-ROS Agent (ROS 2 package)
 sudo apt install ros-humble-micro-ros-agent
