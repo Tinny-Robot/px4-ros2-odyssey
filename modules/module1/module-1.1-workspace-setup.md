@@ -21,6 +21,10 @@ colcon build
 
 # Source local setup
 source install/setup.bash
+```
+
+*Persist sourcing (optional)*
+```bash
 
 # Persist sourcing (optional)
 echo 'source ~/px4_ros2_ws/install/setup.bash' >> ~/.bashrc
@@ -46,9 +50,6 @@ git clone https://github.com/PX4/px4_msgs.git
 # px4_ros_com uses RTPS bridge utilities
 git clone https://github.com/PX4/px4_ros_com.git
 
-# Optional: checkout versions matching your PX4 tag
-# cd px4_msgs && git checkout <tag>; cd ..
-# cd px4_ros_com && git checkout <tag>; cd ..
 ```
 
 ---

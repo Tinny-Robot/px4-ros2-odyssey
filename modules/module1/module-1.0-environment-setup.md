@@ -208,11 +208,9 @@ chmod +x ./QGroundControl.AppImage
 ___
 ## Workspace Setup
 
-This section has moved to a dedicated module:
+Refer to the [Workspace Setup Guide](./module-1.1-workspace-setup.md) for detailed instructions on configuring your development workspace. 
 
-Next: Module 1.1 — Workspace Setup → modules/module1/module-1.1-workspace-setup.md
-
-We separated it to keep Environment Setup focused on system dependencies and installations.
+This separation ensures that the Environment Setup section remains focused on system dependencies and installations.
 
 ## Testing and Verification
 
