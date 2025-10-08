@@ -93,61 +93,20 @@ ros2 run demo_nodes_cpp talker  # In terminal 1
 ros2 run demo_nodes_cpp listener  # In terminal 2
 ```
 ---
-### 2. PX4 Autopilot Development Environment
-
-📚 **Official Documentation:**
-- [PX4 Development Environment on Ubuntu](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
-- [PX4 Build Instructions](https://docs.px4.io/main/en/dev_setup/building_px4.html)
-- [X500v2 Airframe Reference](https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2)
-
-#### Step 2.1: Get PX4 Source Code
-```bash
-# Clone PX4-Autopilot repository
-git clone https://github.com/PX4/PX4-Autopilot.git --recursive
-cd PX4-Autopilot
-
-# Update submodules
-git submodule update --init --recursive
-```
-
-#### Step 2.2: Install PX4 Dependencies
-```bash
-# Run the ubuntu.sh script with no prompt
-bash Tools/setup/ubuntu.sh --no-nuttx
-
-# Install python packages
-pip3 install --user -r Tools/setup/requirements.txt
-```
-
-#### Step 2.3: Configure for X500v2
-```bash
-# First clean build
-make clean
-
-# Build for X500v2 SITL
-make px4_sitl gz_x500
-```
-
-💡 **Verification:**
-```bash
-# Test PX4 SITL
-make px4_sitl gz_x500
-```
-
-### 3. Gazebo Harmonic Installation
+### 2. Gazebo Harmonic Installation
 
 📚 **Official Documentation:**
 - [Gazebo Harmonic Installation Guide](https://gazebosim.org/docs/harmonic/install_ubuntu)
 
 
-#### Step 3.1: Install Required Tools
+#### Step 2.1: Install Required Tools
 ```bash
 # Update package lists and install required tools
 sudo apt-get update
 sudo apt-get install curl lsb-release gnupg
 ```
 
-#### Step 3.2: Add Gazebo Package Repository
+#### Step 2.2: Add Gazebo Package Repository
 ```bash
 # Add Gazebo GPG key
 sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
@@ -156,7 +115,7 @@ sudo curl https://packages.osrfoundation.org/gazebo.gpg --output /usr/share/keyr
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] https://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
 ```
 
-#### Step 3.3: Install Gazebo Harmonic
+#### Step 2.3: Install Gazebo Harmonic
 ```bash
 # Update package lists
 sudo apt-get update
@@ -171,6 +130,47 @@ sudo apt-get install gz-harmonic
 ```bash
 # Test Gazebo installation
 gz sim
+```
+
+### 3. PX4 Autopilot Development Environment
+
+📚 **Official Documentation:**
+- [PX4 Development Environment on Ubuntu](https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html)
+- [PX4 Build Instructions](https://docs.px4.io/main/en/dev_setup/building_px4.html)
+- [X500v2 Airframe Reference](https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2)
+
+#### Step 3.1: Get PX4 Source Code
+```bash
+# Clone PX4-Autopilot repository
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+cd PX4-Autopilot
+
+# Update submodules
+git submodule update --init --recursive
+```
+
+#### Step 3.2: Install PX4 Dependencies
+```bash
+# Run the ubuntu.sh script with no prompt
+bash Tools/setup/ubuntu.sh --no-nuttx
+
+# Install python packages
+pip3 install --user -r Tools/setup/requirements.txt
+```
+
+#### Step 3.3: Configure for X500v2
+```bash
+# First clean build
+make clean
+
+# Build for X500v2 SITL
+make px4_sitl gz_x500
+```
+
+💡 **Verification:**
+```bash
+# Test PX4 SITL
+make px4_sitl gz_x500
 ```
 
 ### 4. QGroundControl Setup

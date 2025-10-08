@@ -30,7 +30,7 @@ Before starting, ensure you have:
 - Basic understanding of Python or C++  
 - Git, colcon, and VSCode (optional but recommended)
 
-> 💡 Follow the setup instructions in [Module 1](modules/module-1-environment-setup.md).
+> 💡 Start with [Module 1.0 — Environment Setup](modules/module1/module-1.0-environment-setup.md) and then [Module 1.1 — Workspace Setup](modules/module1/module-1.1-workspace-setup.md).
 
 ---
 
@@ -40,7 +40,8 @@ We are currently working on:
 
 | Stage | Module | Focus | Status |
 |--------|---------|--------|--------|
-| 🧩 1 | **ROS 2 + PX4 Environment Setup** | Installation, workspace configuration, X500v2 simulation | � In Progress |
+| 🧩 1 | **ROS 2 + PX4 Environment Setup** | Installation, workspace configuration, X500v2 simulation | ✅ Completed |
+| � 2 | **ROS 2 Basics for PX4** | Topics, services, and nodes | �🚧 In Progress |
 | 🔌 2 | **ROS 2 Basics for PX4** | Topics, services, and nodes | ⬜ |
 | 🚁 3 | **PX4 SITL with Gazebo Harmonic** | Simulation environment setup | ⬜ |
 | 🧠 4 | **Parameter Management & Mission Upload** | Retrieve, set, and upload mission data | ⬜ |
@@ -53,6 +54,10 @@ We are currently working on:
 
 ## 🧩 Module 1: Environment Setup  
 
+Quick links:
+- Module 1.0 — [Environment Setup](modules/module1/module-1.0-environment-setup.md)
+- Module 1.1 — [Workspace Setup](modules/module1/module-1.1-workspace-setup.md)
+
 This module covers:
 - Setting up ROS 2 Humble
 - Installing PX4 Autopilot
@@ -61,6 +66,12 @@ This module covers:
 - Creating a complete development environment
 
 ---
+
+## 🔌 Module 2: ROS 2 Basics
+
+Quick link:
+- Module 2.0 — ROS 2 Basics for PX4: modules/module2/module-2.0-ros2-basics.md
+
 
 ## 🧠 Learning Outcomes  
 By the end of this journey, you will be able to:  
@@ -86,11 +97,11 @@ By the end of this journey, you will be able to:
 ```bash
 px4-ros2-odyssey/
 ├── modules/
-│   ├── module-1-environment-setup.md
-│   ├── module-2-ros2-basics.md
-│   ├── module-3-sitl-simulation.md
-│   ├── module-4-parameter-and-mission.md
-│   └── ...
+│   └── module1/
+│       ├── module-1.0-environment-setup.md
+│       └── module-1.1-workspace-setup.md
+│   └── module2/
+│       └── module-2.0-ros2-basics.md
 ├── assets/             # Images, diagrams, videos
 ├── scripts/            # ROS 2 and PX4 scripts
 ├── launch/             # ROS 2 launch files
