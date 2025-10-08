@@ -1,5 +1,6 @@
 # 🛰️ PX4-ROS2 Odyssey  
-*A journey from simulation to autonomy with PX4, ROS 2 Humble, and Gazebo Harmonic.*
+*A journey from simulation to autonomy with PX4, ROS 2 Humble, and Gazebo Harmonic.*  
+*Created by [@Tinny-Robot](https://github.com/Tinny-Robot)*
 
 ---
 
@@ -103,3 +104,40 @@ px4-ros2-odyssey/
 ├── scripts/            # ROS 2 and PX4 scripts
 ├── launch/             # ROS 2 launch files
 └── README.md
+````
+
+---
+
+## 📸 Media and Demonstrations
+
+Screenshots, simulation GIFs, and videos of flight tests will be included in the `assets/` folder and embedded in each module.
+
+---
+
+## 📚 References
+
+* [ROS 2 Documentation](https://docs.ros.org/en/humble/)
+* [PX4 User Guide](https://docs.px4.io/main/en/)
+* [Gazebo Harmonic Docs](https://gazebosim.org/docs/harmonic)
+* [MAVROS Wiki](https://wiki.ros.org/mavros)
+
+---
+
+## 🧑‍💻 Author
+
+**Nathaniel Handan (Tinny-Robot)**
+Roboticist | AI & Drone Engineer | ROS 2 Developer
+🌐 [LinkedIn](https://www.linkedin.com/in/nathanielhandan/)
+🐙 [GitHub](https://github.com/Tinny-Robot)
+✉️ [handanfoun@gmail.com](mailto:handanfoun@gmail.com)
+
+---
+
+## 🪶 License
+
+This project is licensed under the **MIT License** — feel free to use, modify, and share it with attribution.
+
+---
+
+> *“The journey of mastering autonomy begins with one launch file.”* 🚀
+
