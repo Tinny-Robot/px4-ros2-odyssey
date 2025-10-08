@@ -5,8 +5,8 @@
 ---
 
 ## 📖 Overview  
-**PX4-ROS2 Odyssey** is a complete guide and documentation of my journey exploring the integration of **PX4 Autopilot** with **ROS 2 Humble** using **Gazebo Harmonic**.  
-It walks through everything from the fundamentals of ROS 2 and PX4 to building, simulating, and deploying fully autonomous robotic systems — both aerial and ground-based.  
+**PX4-ROS2 Odyssey** is an ongoing collaborative project exploring the integration of **PX4 Autopilot** with **ROS 2 Humble** using **Gazebo Harmonic**, specifically focused on the **Holybro X500v2** drone frame.  
+This guide documents our journey in setting up a complete development environment for drone simulation and control, starting with the fundamentals of ROS 2 and PX4.
 
 Whether you’re a **student**, **researcher**, or **enthusiast**, this repository will help you learn, practice, and master key robotics concepts with real-world applications.
 
@@ -34,11 +34,13 @@ Before starting, ensure you have:
 
 ---
 
-## 🗺️ Roadmap at a Glance  
+## 🗺️ Current Focus  
+
+We are currently working on:
 
 | Stage | Module | Focus | Status |
 |--------|---------|--------|--------|
-| 🧩 1 | **ROS 2 + PX4 Environment Setup** | Installation, workspace configuration | ⬜ |
+| 🧩 1 | **ROS 2 + PX4 Environment Setup** | Installation, workspace configuration, X500v2 simulation | � In Progress |
 | 🔌 2 | **ROS 2 Basics for PX4** | Topics, services, and nodes | ⬜ |
 | 🚁 3 | **PX4 SITL with Gazebo Harmonic** | Simulation environment setup | ⬜ |
 | 🧠 4 | **Parameter Management & Mission Upload** | Retrieve, set, and upload mission data | ⬜ |
@@ -49,26 +51,16 @@ Before starting, ensure you have:
 | 🧰 9 | **Real Hardware Deployment** | Connecting and testing on real UAVs | ⬜ |
 | 🧾 10 | **Advanced Topics** | MAVROS bridge, custom control nodes | ⬜ |
 
----
+## 🧩 Module 1: Environment Setup  
 
-## 🧩 Modules  
+This module covers:
+- Setting up ROS 2 Humble
+- Installing PX4 Autopilot
+- Configuring Gazebo Harmonic
+- Setting up the Holybro X500v2 simulation model
+- Creating a complete development environment
 
-### **Module 1: Environment Setup**  
-Setting up ROS 2 Humble, PX4 Autopilot, Gazebo Harmonic, and necessary dependencies.  
-
-### **Module 2: ROS 2 Fundamentals**  
-Understanding ROS 2 communication concepts and writing basic publisher-subscriber nodes.  
-
-### **Module 3: PX4 SITL Simulation**  
-Running PX4 in Software-in-the-Loop (SITL) mode with Gazebo Harmonic and connecting ROS 2 nodes.  
-
-### **Module 4: Parameter Data and Mission Upload**  
-- Retrieving and modifying PX4 parameters via ROS 2  
-- Uploading mission data (waypoints, flight paths)  
-- Executing and monitoring missions  
-
-### **Module 5–10**  
-Continue expanding each module with detailed walkthroughs, code examples, and simulation outputs.
+> 💡 We're actively developing this module together. Follow along in [Module 1](modules/module-1-environment-setup.md).
 
 ---
 
@@ -85,6 +77,7 @@ By the end of this journey, you will be able to:
 - **ROS 2 Humble Hawksbill**  
 - **PX4 Autopilot**  
 - **Gazebo Harmonic**  
+- **Holybro X500v2 Frame**  
 - **MAVLink / MAVROS**  
 - **Python / C++**  
 - **QGroundControl**
